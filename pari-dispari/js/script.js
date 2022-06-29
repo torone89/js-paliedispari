@@ -51,17 +51,23 @@ const somma = numeroutente + risultatorandom
 console.log("Sommma " + somma)
 
 
-// Fase 4 Calcolo se il risulato è pari o dispari con una funzione
+// Fase 4 calcolo se il risulato è pari o dispari
 
 function isEven(number) {
-    // Fase 3 Condizione di vittoria con un ternario true .. false
 
-
-    number = somma % 2 == 0 ? alert("Hai vinto") : alert("Non hai vinto")
-
-
-    console.log(number)
+    if (number % 2 == 0) {
+        return "pari"
+    }
+    else { return "dispari" }
 
 }
 
-const vincitore = isEven()
+const vincitore = isEven(somma)
+
+// Fase 5 Decreto se l'utente ha vinto o perso
+
+if (vincitore === paridispari) {
+    alert("hai vinto")
+} else {
+    alert("hai perso")
+}
