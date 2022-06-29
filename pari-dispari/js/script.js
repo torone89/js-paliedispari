@@ -43,10 +43,25 @@ function getRandomNumber(min = 1, max = 5) {
 }
 
 const risultatorandom = getRandomNumber()
-console.log(risultatorandom)
+console.log("somma " + risultatorandom)
 
 
-// Calcolo la somma dei due numeri
-const somma = numeroutente + risultatorandom
-console.log(somma)
+// // Fase 3 Calcolo la somma dei due numeri
+// const somma = numeroutente + risultatorandom
+// console.log(somma)
 
+
+// Fase 4 Calcolo se il risulato è pari o dispari con una funzione
+
+function isEven(number) {
+    // Fase 3 Condizione di vittoria con un ternario true .. false
+
+
+    number = risultatorandom % 2 == 0 ? "hai vinto" : "Non hai vinto"
+
+
+    console.log(number)
+
+}
+
+const vincitore = isEven()
