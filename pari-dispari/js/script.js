@@ -41,3 +41,7 @@ function getRandomNumber(min = 1, max = 5) {
 const risultatorandom = getRandomNumber()
 console.log(risultatorandom)
 
+
+
+const somma = getRandomNumber() + getNumberFromUser()
+

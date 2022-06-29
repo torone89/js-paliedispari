@@ -34,11 +34,15 @@ console.log(parolareverse)
 // FASE 3 Creiamo le condizioni se la parola e Palindorma oppure no
 
 // Ternario
-// const verifica = richiesta == parolareverse ? false
+//
 
+const verifica = richiesta == parolareverse ? "la parola è palindroma" : "la parola non è palindroma"
 
-if (richiesta == parolareverse) {
-    console.log('la parola è palindroma');
-} else {
-    console.log('la parola non è palindroma');
-}
+// SOLuzione 2 con for
+// if (richiesta == parolareverse) {
+//     console.log('la parola è palindroma');
+// } else {
+//     console.log('la parola non è palindroma');
+// }
+
+console.log(verifica)
