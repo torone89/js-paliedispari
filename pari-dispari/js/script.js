@@ -28,3 +28,16 @@ function getNumberFromUser(min, max) {
 // SPECIFICO nella domada che il numero di può essere min di 1 e max di 5
 const numeroutente = getNumberFromUser(1, 5)
 console.log(numeroutente)
+
+
+// Fase 2 Genero un numero Casuale per il pc
+
+
+function getRandomNumber(min = 1, max = 5) {
+    const RandomNumber = Math.floor(Math.random() * (max) + min)
+    return RandomNumber
+}
+
+const risultatorandom = getRandomNumber()
+console.log(risultatorandom)
+
