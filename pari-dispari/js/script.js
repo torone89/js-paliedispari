@@ -31,7 +31,7 @@ function getNumberFromUser(min, max) {
 
 // SPECIFICO nella domandda che il numero di può essere min di 1 e max di 5
 const numeroutente = getNumberFromUser(1, 5)
-console.log(numeroutente)
+console.log("Risultato Utente " + numeroutente)
 
 
 // Fase 2 Genero un numero Casuale per il pc
@@ -43,12 +43,12 @@ function getRandomNumber(min = 1, max = 5) {
 }
 
 const risultatorandom = getRandomNumber()
-console.log("somma " + risultatorandom)
+console.log("Risultato Pc " + risultatorandom)
 
 
-// // Fase 3 Calcolo la somma dei due numeri
-// const somma = numeroutente + risultatorandom
-// console.log(somma)
+// Fase 3 Calcolo la somma dei due numeri
+const somma = numeroutente + risultatorandom
+console.log("Sommma " + somma)
 
 
 // Fase 4 Calcolo se il risulato è pari o dispari con una funzione
@@ -57,7 +57,7 @@ function isEven(number) {
     // Fase 3 Condizione di vittoria con un ternario true .. false
 
 
-    number = risultatorandom % 2 == 0 ? "hai vinto" : "Non hai vinto"
+    number = somma % 2 == 0 ? alert("Hai vinto") : alert("Non hai vinto")
 
 
     console.log(number)
