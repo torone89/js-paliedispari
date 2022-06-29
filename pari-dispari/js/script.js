@@ -10,6 +10,9 @@ console.log("JS")
 // Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 // Dichiariamo chi ha vinto.
 
+// Fase 0 chiedo all'utente se è parid o dispari 
+const paridispari = prompt("Scrivi pari o dispari")
+console.log(paridispari)
 
 // Fase 1 Chiediamo all'utente un numero da 1 a 5 
 
@@ -17,15 +20,16 @@ function getNumberFromUser(min, max) {
     let numero = parseInt(prompt(`Inserisci un numero da ${min} a ${max}`))
 
     // VALIDAZIONE NUMERO da 1 a 5 e che sia un numero
-    while (isNaN(numero) || numero < 2 || numero > 5) {
+    while (isNaN(numero) || numero < min || numero > max) {
         alert('Inserisci un numero e un numero valido da 1 a 5')
-
-        return numero
     }
+
+    return numero;
+
 
 }
 
-// SPECIFICO nella domada che il numero di può essere min di 1 e max di 5
+// SPECIFICO nella domandda che il numero di può essere min di 1 e max di 5
 const numeroutente = getNumberFromUser(1, 5)
 console.log(numeroutente)
 
@@ -42,6 +46,7 @@ const risultatorandom = getRandomNumber()
 console.log(risultatorandom)
 
 
-
-const somma = getRandomNumber() + getNumberFromUser()
+// Calcolo la somma dei due numeri
+const somma = numeroutente + risultatorandom
+console.log(somma)
 
